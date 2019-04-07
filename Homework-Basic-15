@@ -13,17 +13,17 @@ int main(void){      //主程式
 void isLate(int h,int m){
 	if(h>=7&&h<17){
 		if(h==7&&m>=30){    //7:30為上課時間
-			printf("現在是上課時間");
+			printf("現在是上課時間\n");
 			printf("時間%d:%d",h,m);
 		}
 		else if(h>7){       //8:00~17:00為上課時間
-			printf("現在是上課時間");
+			printf("現在是上課時間\n");
 			printf("時間%d:%d",h,m);
 		}
 
 	}
 	else{
-		printf("下課囉");
+		printf("下課囉\n");
 	}
 
 }
