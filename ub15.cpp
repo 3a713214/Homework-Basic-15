@@ -1,26 +1,29 @@
-#include<stdio.h>    /*¾É¤J¨ç¦¡®w*/
+#include<stdio.h>    
 #include<stdlib.h>
-void isLate(int,int);/*isLate()ªº­ì«¬*/
-int main(void){      /*¥Dµ{¦¡*/
-	int h,m;         /*«Ø¥ßintÅÜ¼Æ h¤p®É m¤ÀÄÁ*/
-	printf("½Ğ¿é¤J®É¶¡");
+void isLate(int,int);//isLate()çš„åŸå‹
+int main(void){      //ä¸»ç¨‹å¼
+	int h,m;  //å»ºç«‹intè®Šæ•¸ hå°æ™‚ måˆ†é˜
+	while(1)//ç„¡é™è¿´åœˆ 
+	{
+	printf("è«‹è¼¸å…¥æ™‚é–“");
 	scanf("%d %d",&h,&m);
 	isLate(h,m);
 }
+}
 void isLate(int h,int m){
 	if(h>=7&&h<17){
-		if(h==7&&m>=30){    /*7:30¬°¤W½Ò®É¶¡*/
-			printf("²{¦b¬O¤W½Ò®É¶¡");
-			printf("®É¶¡%d:%d",h,m);
+		if(h==7&&m>=30){    //7:30ç‚ºä¸Šèª²æ™‚é–“
+			printf("ç¾åœ¨æ˜¯ä¸Šèª²æ™‚é–“\n");
+			
 		}
-		else if(h>7){       /*8:00~17:00¬°¤W½Ò®É¶¡*/
-			printf("²{¦b¬O¤W½Ò®É¶¡");
-			printf("®É¶¡%d:%d",h,m);
+		else if(h>7){       //8:00~17:00ç‚ºä¸Šèª²æ™‚é–“
+			printf("ç¾åœ¨æ˜¯ä¸Šèª²æ™‚é–“\n");
+			
 		}
 
 	}
 	else{
-		printf("¤U½ÒÅo");
+		printf("ä¸‹èª²å›‰\n");
 	}
 
 }
